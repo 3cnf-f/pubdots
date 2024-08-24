@@ -1,0 +1,2 @@
+f_scp_cs_send() { sshpass -p "<put password here>" scp -i .ssh/id_ed25519 -r  "$1" root@replaceWipadress:/home/podamanis/code-server/c-s_base_mount/workspace/inbox ;} 
+f_scp_cs_get() { sshpass -p "<put password here>" scp -i .ssh/id_ed25519 -r root@replaceWip:/home/podamanis/code-server/c-s_base_mount/workspace/outbox/"$1" ./ ;} 

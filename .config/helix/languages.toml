@@ -1,0 +1,27 @@
+# [[language]]
+# name = "python"
+# language-servers = ["pylsp"]
+#
+# [language-server.pylsp.config.pylsp]
+# plugins.ruff.enabled = true
+# plugins.black.enabled = true
+
+# [language-server.ruff-lsp]
+# command = "ruff-lsp"
+# [[language]]
+# name = "python"
+# language-servers = [ "ruff-lsp" ]
+# 
+#nedanstående har intruktioner förfunktionwe i isp
+# https://roderik.no/helix-editor-with-multiple-lsps-for-one-language
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff", "pylyzer"]
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+[language-server.ruff]
+command = "ruff"
+config = { settings = { args = ["server"] } }
+[language-server.pylyzer]
+command = "pylyzer"
+config = { settings = { args = ["--server"] } }
