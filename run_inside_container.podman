@@ -1,4 +1,4 @@
 apt update \
 && apt upgrade -y \
-&& apt -y install util-linux gh nano python3-pip python3-venv tmux \
+&& apt -y install util-linux gh git nano python3-pip python3-venv tmux \
 
