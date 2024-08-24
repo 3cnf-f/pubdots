@@ -1,4 +1,4 @@
 apt update \
 && apt upgrade -y \
-&& apt install gh nano python3-pip python3-venv  \
+&& apt -y install gh nano python3-pip python3-venv  \
 
