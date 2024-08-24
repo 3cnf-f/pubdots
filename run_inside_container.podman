@@ -1,0 +1,9 @@
+apt upgrade -y && \
+apt update \
+&& apt -y install apt-utils dialog wget \
+&& mkdir -p -m 755 /etc/apt/keyrings \
+&& wget -qO- https://cli.github.com/packages/githubcli-archive>
+&& chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg >
+&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc>
+&& apt install gh -y
+
