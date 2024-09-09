@@ -1,3 +1,9 @@
+running webtop kasm with cloudflare
+https://localhost:3001
+tls no verify
+http2
+
+
 #fix colors: #On the SSH server, create a file /etc/ssh/sshd_config.d/truecolor.conf with the following contents:
 
 AcceptEnv LANG LC_* TERM COLORTERM
