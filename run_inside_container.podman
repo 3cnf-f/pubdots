@@ -1,4 +1,5 @@
 apt update \
 && apt upgrade -y \
 && apt-get install -y gnome-core gnome-panel ubuntu-gnome-desktop tightvncserver imagej\
+&& apt install -y nano gh 
 
