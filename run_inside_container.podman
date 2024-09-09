@@ -5,9 +5,10 @@ apt update \
 
 
 stubb  for xcb anki
-wget https://github.com/ankitects/anki/releases/download/24.06.3/anki-24.06.3-linux-qt6.tar.zst \
+apt install -y wget nano zstd \
+&& wget https://github.com/ankitects/anki/releases/download/24.06.3/anki-24.06.3-linux-qt6.tar.zst \
 && tar xaf anki-24.06.3-linux-qt6.tar.zst \
-&& cd anki-24.06.3-linux-qt6.tar \
+&& cd anki-24.06.3-linux-qt6 \
 && ./install.sh
 
  
