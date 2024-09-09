@@ -1,5 +1,9 @@
+everyone:
 apt update \
 && apt upgrade -y \
-&& apt-get install -y gnome-core gnome-panel ubuntu-gnome-desktop tightvncserver imagej\
-&& apt install -y nano gh 
+&& apt install -y nano gh curl \
+&& apt install -y gnome-core gnome-panel ubuntu-gnome-desktop tightvncserver \
+&& apt install -y sudo
+
+ 
 
