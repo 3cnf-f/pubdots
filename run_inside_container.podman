@@ -4,13 +4,11 @@ apt update \
 && apt install -y sudo
 
 
-stupp for xcb anki
-apt install -y -q libxkbcommon-x11-0 \
-&&  apt install -y -q libxcb-image0 \
-&&  apt install -y -q libxcb-keysyms1 \
-&&  apt install -y -q libxcb-render-util0 \
-&&  apt install -y -q libxcb-xinerama0 \ 
-&&  apt install -y -q libxcb-icccm4
+stubb  for xcb anki
+curl https://github.com/ankitects/anki/releases/download/24.06.3/anki-24.06.3-linux-qt6.tar.zst \
+&& tar xaf anki-24.06.3-linux-qt6.tar.zst \
+&& cd anki-24.06.3-linux-qt6.tar \
+&& ./install.sh
 
  
 
