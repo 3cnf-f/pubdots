@@ -1,8 +1,6 @@
-everyone:
 apt update \
 && apt upgrade -y \
-&& apt install -y nano gh curl \
-&& apt install -y gnome-core gnome-panel ubuntu-gnome-desktop tightvncserver \
+&& apt install -y nano gh curl wget \
 && apt install -y sudo
 
  
