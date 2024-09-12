@@ -1,0 +1,39 @@
+theme = "autumn"
+
+[keys.normal]
+
+"ä" = { "h" = ":toggle file-picker.hidden", "r" = ":config-reload", "l"=":toggle-option line-number absolute relative","w"=["move_prev_word_start", "move_next_word_end"],"s"="surround_add"}
+S-right = "extend_to_line_end" 
+S-left= "extend_to_line_start" 
+X = ["goto_first_nonwhitespace", "extend_to_line_end", "change_selection"]
+
+[keys.insert]
+
+
+S-right = "extend_to_line_end" 
+S-left= "extend_to_line_start" 
+
+[editor]
+line-number = "relative" 
+scroll-lines = 1
+scrolloff = 8
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.indent-guides]
+render = true
+character = "\uF444"
