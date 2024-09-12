@@ -15,6 +15,8 @@ mkdir hxconfig && \
 cd hxconfig &&\
 wget https://raw.githubusercontent.com/3cnf-f/pubdots/main/.config/helix/config.toml &&\
 
-cp config.toml /root/.config/helix/   
+cp config.toml /root/.config/helix/ &&\
+
+python -m pip install pydicom flask python-datauri dash pandas
 
 ```
