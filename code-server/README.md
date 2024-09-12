@@ -4,7 +4,7 @@
 apt update && \
 apt upgrade -y &&\
 apt install -y nano gh curl wget imagej &&\
-apt-install -y python3-pip python3-venv pipx &&\
+apt install -y python3-pip python3-venv pipx &&\
 hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
 hxdir=helix-24.07-x86_64-linux &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
