@@ -27,10 +27,10 @@ mkdir -p /root/.config/helix/runtime && cp -r runtime/* /home/podamanis/.config/
 mkdir hxconfig && \
 cd hxconfig &&\
 wget https://github.com/3cnf-f/pubdots/blob/2051e873b7e832b13d0750695cf1cf540d9bfacb/.config/helix/config.toml &&\
-cp config.toml /home/podamanis/.config/helix/ &&
-cp config.toml /home/ubuntu/.config/helix/ &&
-cp config.toml /root/.config/helix/
-chown -R podamanis:1000 /home/podamanis
+cp config.toml /home/podamanis/.config/helix/ &&\
+cp config.toml /home/ubuntu/.config/helix/ &&\
+cp config.toml /root/.config/helix/  &&\
+chown -R podamanis:1000 /home/podamanis  &&\
 chown -R ubuntu:1000 /home/ubuntu
 
 
