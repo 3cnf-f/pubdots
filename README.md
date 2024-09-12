@@ -20,15 +20,24 @@ podman run -ti -v "/home/lino_pod_heli/test:/home/poop" docker.io/library/ubuntu
 
 #variables and passwords
 
-hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz &&
-hxdir=helix-24.07-x86_64-linux &&
+apt install -y git wget xz-utils unzip  &&
+
+hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
+hxdir=helix-24.07-x86_64-linux &&  \
+mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
+wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
+mkdir -p /home/ubuntu/.config/helix/runtime && cp -r runtime/* /home/ubuntu/.config/helix/runtime/ 
+
+cmd git clone https://@github.com/3cnf-f/helix_container git checkout -b heli git add .
+
+git config user.email --global "154888836+3cnf-f@users.noreply.github.com" git config user.name --global "3cnf-f" git commit -m heli
+
 chpasswd <<< "ubuntu:x" &&
 chpasswd <<< "root:x" &&
 apt update && apt upgrade -y &&
-apt install -y git wget xz-utils unzip sudo &&
-mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor &&
-wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin &&
-mkdir -p /home/ubuntu/.config/helix/runtime && cp -r runtime/* /home/ubuntu/.config/helix/runtime/ &&
+
+
+
 apt update && \ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python3-venv python3 python3-pip pipx &&
 chown -R ubuntu:1000 /home/ubuntu &&
 loginctl enable-linger podmanuser &&
@@ -48,8 +57,6 @@ t = ":toggle file-picker.hidden"
 
 [keys.normal] "1" = { "r" = ":config-reload" }
 
-#git cmd git clone https://@github.com/3cnf-f/helix_container git checkout -b heli git add .
 
-git config user.email --global "154888836+3cnf-f@users.noreply.github.com" git config user.name --global "3cnf-f" git commit -m heli
 
 #copy file with scp scp -i .ssh/id_ed25519 /home/user/file.zip root@host:/home/user/file.zip
