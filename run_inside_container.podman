@@ -1,7 +1,8 @@
 apt update \
 && apt upgrade -y \
 && apt install -y nano gh curl wget zstd\
-&& apt install -y sudo
+&& apt install -y sudo \
+&& apt install -y --no-install-recommends python3-venv python3-pip pipx
 
 
 stubb  for xcb anki
