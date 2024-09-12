@@ -17,6 +17,6 @@ wget https://raw.githubusercontent.com/3cnf-f/pubdots/main/.config/helix/config.
 
 cp config.toml /root/.config/helix/ &&\
 
-python -m pip install pydicom flask python-datauri dash pandas
+apt install -y python3-pydicom python3-flask python3-plotly python3-pandas
 
 ```
