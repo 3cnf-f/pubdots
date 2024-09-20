@@ -1,3 +1,5 @@
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
 running webtop kasm with cloudflare
 https://localhost:3001
 tls no verify
