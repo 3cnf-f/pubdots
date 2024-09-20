@@ -1,3 +1,5 @@
+tar -czvf file.tar.gz directory
+
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
 running webtop kasm with cloudflare
