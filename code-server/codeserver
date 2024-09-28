@@ -1,0 +1,14 @@
+podman run -i -t \
+  --name=code-server \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Etc/UTC \
+  -e PASSWORD=,,,,, \
+  -e SUDO_PASSWORD=,,,,,,  \
+  -e DEFAULT_WORKSPACE=/workspace `#optional` \
+  -p 8443:8443 \
+  -v ~/code-server/config:/config \
+
+  lscr.io/linuxserver/code-server:latest\
+
+/bin/bash
