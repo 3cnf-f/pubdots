@@ -1,10 +1,10 @@
 
 ## Start a session 
-´´´
 
+```
 screen -S myscreen 
+```
 
-´´´
 
 tar -czvf file.tar.gz directory
 
