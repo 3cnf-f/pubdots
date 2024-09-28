@@ -1,4 +1,12 @@
+## add to bashrc
 
+```
+echo "run app.py in container as container/ubuntu with in session. Dont forget to detach session and container properly"
+echo "f_r_a is alias to activate venv and run app.py "
+
+alias f_r_a='echo ----------------- && echo C-a_C-d_to_detach && echo ---------- && echo && cd /home/ubuntu/ons && . ./.venv/bin/activate && python3 app.py'
+
+```
 ## Start a session 
 
 ```
