@@ -5,6 +5,23 @@
 screen -S myscreen 
 ```
 
+## See sessions
+
+```
+screen -list
+```
+
+## Detach session (no shudtown of session) 
+
+```
+C-a C-d
+```
+
+## Reattach to session
+
+```
+screen -r myscreen 
+```
 
 tar -czvf file.tar.gz directory
 
