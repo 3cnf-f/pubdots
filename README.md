@@ -1,3 +1,7 @@
+## get pub key
+```
+curl -O https://github.com/<username>.keys
+```
 ## add to bashrc
 
 ```
