@@ -1,3 +1,10 @@
+
+## mogrify imagemagick to remove 128 p from each size
+```
+mogrify -shave 128x0 *.jpg
+```
+
+
 ## tar without gz
 ```
 tar -cvf archive.tar folder1/ file.txt *.glob
