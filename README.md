@@ -1,3 +1,8 @@
+## tar without gz
+```
+tar -cvf archive.tar folder1/ file.txt *.glob
+```
+
 ## get pub key
 ```
 curl -O https://github.com/<username>.keys
