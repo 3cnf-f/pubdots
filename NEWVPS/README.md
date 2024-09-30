@@ -1,3 +1,8 @@
+# IMPORTANT! to edit files in container from outside (wo messing up permissions?)
+```
+podman unshare hx ./.local/share/containers/storage/overlay/0a........3d/diff/home/ubuntu/ons/app.py
+```
+
 # run these on servers
 
 ```
