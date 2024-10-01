@@ -53,7 +53,7 @@ curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg |  tee /usr/share/keyr
 
 echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared noble main' |  tee /etc/apt/sources.list.d/cloudflared.list &&\
 
-apt install -y cloudflared
+apt update -y && apt install -y cloudflared
 
 ```
 
