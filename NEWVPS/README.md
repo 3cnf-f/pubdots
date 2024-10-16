@@ -15,7 +15,7 @@ apt install -y python3-pip python3-venv pipx python3-flask
 
 ## run to setup podamanis 
 ```
-useradd podamanis 
+adduser podamanis 
 loginctl enable-linger podamanis
 ```
 
