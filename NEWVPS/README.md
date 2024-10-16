@@ -33,7 +33,7 @@ mkdir -p /root/.config/helix/runtime && cp -r runtime/* /root/.config/helix/runt
 
 mkdir hxconfig && \
 cd hxconfig &&\
-wget https://raw.githubusercontent.com/3cnf-f/pubdots/main/.config/helix/config.toml &&\
+wget https://raw.githubusercontent.com/3cnf-f/pubdots/refs/heads/newshit/.config/helix/config.toml &&\
 cp config.toml /home/podamanis/.config/helix/ &&\
 cp config.toml /home/ubuntu/.config/helix/ &&\
 cp config.toml /root/.config/helix/  &&\
