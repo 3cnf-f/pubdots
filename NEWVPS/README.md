@@ -38,7 +38,7 @@ cp config.toml /home/podamanis/.config/helix/ &&\
 cp config.toml /home/ubuntu/.config/helix/ &&\
 cp config.toml /root/.config/helix/  &&\
 chown -R podamanis:1000 /home/podamanis  &&\
-chown -R ubuntu:1000 /home/ubuntu && \
+chown -R ubuntu:1000 /home/ubuntu 
 
 
 
