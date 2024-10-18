@@ -8,7 +8,7 @@ podman unshare hx ./.local/share/containers/storage/overlay/0a........3d/diff/ho
 ```
 apt update && \
 apt upgrade -y &&\
-apt install -y nano git curl xz-utils unzip podman screen &&\
+apt install -y nano git curl wget xz-utils zstd unzip podman screen &&\
 apt install -y python3-pip python3-venv pipx python3-flask
 ```
  
