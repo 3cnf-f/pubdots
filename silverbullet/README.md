@@ -1,5 +1,5 @@
 ```
-apt update && apt upgrade -y &&apt install -y nano git curl wget   screen unzip iproute2
+apt update && apt upgrade -y &&apt install -y nano git curl wget  xz-utils zstd screen unzip iproute2
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
