@@ -3,6 +3,11 @@
 podman unshare hx ./.local/share/containers/storage/overlay/0a........3d/diff/home/ubuntu/ons/app.py
 ```
 
+# ssh send keys (this example from hetzner storagebox)
+```
+cat .ssh/id_ed25519.pub | ssh -p23 utttt@uxxxxx.your-storagebox.de install-ssh-key
+```
+
 # run these on servers
 
 ```
