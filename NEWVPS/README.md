@@ -93,9 +93,7 @@ hxdir=helix-24.07-x86_64-linux &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
 wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
 
-mkdir -p /root/.config/helix/runtime && cp -r runtime/* /root/.config/helix/runtime/ &&\
-
-
+mkdir -p /root/.config/helix/runtime && cp -r runtime/* /root/.config/helix/runtime/ 
 
 mkdir hxconfig && \
 cd hxconfig &&\
