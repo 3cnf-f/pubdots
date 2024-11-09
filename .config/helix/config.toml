@@ -2,11 +2,10 @@ theme = "autumn"
 
 [keys.normal]
 
-"ä" = { "h" = ":toggle file-picker.hidden", "r" = ":config-reload", "l"=":toggle-option line-number absolute relative","w"=["move_prev_word_start", "move_next_word_end"],"s"="surround_add"}
+"ä" = { "up" = "jump_view_up","down" = "jump_view_down","right" = "jump_view_right","left" = "jump_view_left","h" = ":toggle file-picker.hidden", "r" = ":config-reload", "l"=":toggle-option line-number absolute relative","w"=["move_prev_word_start", "move_next_word_end"],"s"="surround_add"}
 S-right = "extend_to_line_end" 
 S-left= "extend_to_line_start" 
 X = ["goto_first_nonwhitespace", "extend_to_line_end", "change_selection"]
-
 [keys.insert]
 
 
@@ -37,3 +36,4 @@ separator = "│"
 [editor.indent-guides]
 render = true
 character = "\uF444"
+
