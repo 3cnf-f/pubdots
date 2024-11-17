@@ -1,3 +1,5 @@
+## use find to recursively locate and copy files by glob
+find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder \;
 
 ## mogrify imagemagick to remove 128 p from each size
 ```
