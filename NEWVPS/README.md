@@ -98,6 +98,6 @@ mkdir -p /root/.config/helix/runtime && cp -r runtime/* /root/.config/helix/runt
 mkdir hxconfig && \
 cd hxconfig &&\
 wget https://raw.githubusercontent.com/3cnf-f/pubdots/refs/heads/newshit/.config/helix/config.toml &&\
-cp config.toml /root/.config/helix/  &&\
+cp config.toml /root/.config/helix/  
 
 ```
