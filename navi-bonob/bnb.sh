@@ -1,0 +1,4 @@
+```bash
+#!/bin/bash
+docker run --name=bnb  -u 1000:1000 -e BNB_PORT=4534 -e BNB_URL=http://192.168.0.182:4534 -e BNB_SONOS_SEED_HOST=192.168.0.154 -e BNB_SECRET= -e BNB_SONOS_SERVICE_ID=246 -e BNB_SONOS_AUTO_REGISTER=true -e BNB_SONOS_DEVICE_DISCOVERY=true -e BNB_SUBSONIC_URL=http://172.17.0.3:4533 -p 4534:4534 simojenki/bonob
+```
