@@ -1,5 +1,10 @@
-## use find to recursively locate and copy files by glob
-find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder \;
+## use find to recursively locate and copy files by glob (plus is faster than \;)
+``` find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder + ```
+
+## use find to recursively locate and zip files by glob
+```
+find . -name *.mp3 -exec zip mp3.zip {} +
+```
 
 ## mogrify imagemagick to remove 128 p from each size
 ```
