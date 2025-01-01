@@ -1,5 +1,7 @@
 ## use find to recursively locate and copy files by glob (plus is faster than \;)
-``` find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder + ```
+```
+ find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder +
+```
 
 ## use find to recursively locate and zip files by glob
 ```
