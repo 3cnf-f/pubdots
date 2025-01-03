@@ -42,7 +42,7 @@ wget https://raw.githubusercontent.com/3cnf-f/pubdots/refs/heads/newshit/.config
 cp config.toml /home/podman/.config/helix/ &&\
 cp config.toml /home/ubuntu/.config/helix/ &&\
 cp config.toml /root/.config/helix/  &&\
-chown -R podman:1000 /home/podamanis  &&\
+chown -R podman:1000 /home/podman  &&\
 chown -R ubuntu:1000 /home/ubuntu 
 
 
