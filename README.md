@@ -1,3 +1,13 @@
+## use du to ls files and directories w human readable sizes
+```
+du -bsh dir/*
+```
+
+## us tar -tf to list contents of tar 
+```
+tar -tf
+```
+
 ## use find to recursively locate and copy files by glob (plus is faster than \;)
 ```
  find . -name "*.pdf" -type f -exec cp {} ./pdfsfolder +
