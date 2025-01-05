@@ -1,0 +1,9 @@
+## allow to port from specific ip
+```
+ufw allow from 10.0.0.46 proto tcp to any port 3308
+```
+
+## revert allow to port from specific ip
+```
+ufw delete allow from 10.0.0.46 proto tcp to any port 3308
+```
