@@ -123,3 +123,27 @@ wget https://raw.githubusercontent.com/3cnf-f/pubdots/refs/heads/newshit/.config
 cp config.toml /home/$username/.config/helix/ &&\
 chown -R $username:1000 /home/$username
 ```
+
+## a sh script to ask for user that gets hx 25 installed. needs some work on the :1000 part
+```
+#!/bin/sh
+
+# Ask for the username
+echo "Please enter the username: "
+read username
+
+# Install required packages
+apt install xz-utils zstd unzip screen iproute2 && \
+hxurl=https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz && \
+hxdir=helix-25.01-x86_64-linux &&  \
+mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
+wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
+mkdir -p /home/$username/.config/helix/runtime && cp -r runtime/* /home/$username/.config/helix/runtime/ &&\
+
+mkdir hxconfig && \
+cd hxconfig &&\
+wget https://raw.githubusercontent.com/3cnf-f/pubdots/refs/heads/newshit/.config/helix/config.toml &&\
+cp config.toml /home/$username/.config/helix/ &&\
+chown -R $username:1000 /home/$username
+```
+ 
