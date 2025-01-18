@@ -26,8 +26,9 @@ loginctl enable-linger podamanis
 
 ## install hx for root ubuntu and podamanis
 ```
-hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
-hxdir=helix-24.07-x86_64-linux &&  \
+hxurl=https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz && \
+
+hxdir=helix-25.01-x86_64-linux &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
 wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
 mkdir -p /home/ubuntu/.config/helix/runtime && cp -r runtime/* /home/ubuntu/.config/helix/runtime/ &&\
@@ -68,8 +69,8 @@ apt update -y && apt install -y cloudflared
 ## install hx in for user abc (ex code server)
 
 ```
-hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
-hxdir=helix-24.07-x86_64-linux &&  \
+hxurl=https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz && \
+hxdir=helix-25.01-x86_64-linux &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
 wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
 mkdir -p /config/.config/helix/runtime && cp -r runtime/* /config/.config/helix/runtime/ &&\
@@ -88,8 +89,8 @@ chown -R abc:1000 /config
 
 ## Install hx for root
 ```
-hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
-hxdir=helix-24.07-x86_64-linux &&  \
+hxurl=https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz && \
+hxdir=helix-25.01-x86_64-linux.tar.x &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
 wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
 
@@ -111,8 +112,8 @@ read username
 
 # Install required packages
 apt install xz-utils zstd unzip screen iproute2 && \
-hxurl=https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz && \
-hxdir=helix-24.07-x86_64-linux &&  \
+hxurl=https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz && \
+hxdir=helix-25.01-x86_64-linux.tar.xz &&  \
 mkdir /tmp/dl-helix-editor && cd /tmp/dl-helix-editor && \
 wget $hxurl && tar -xf h* && cd $hxdir && cp hx /usr/local/bin && \
 mkdir -p /home/$username/.config/helix/runtime && cp -r runtime/* /home/$username/.config/helix/runtime/ &&\
