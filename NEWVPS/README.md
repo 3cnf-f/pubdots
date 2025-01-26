@@ -13,7 +13,7 @@ cat .ssh/id_ed25519.pub | ssh -p23 utttt@uxxxxx.your-storagebox.de install-ssh-k
 ```
 apt update && \
 apt upgrade -y &&\
-apt install -y nano git curl wget xz-utils zstd unzip podman screen iproute2 &&\
+apt install -y nano git curl wget xz-utils zstd unzip iproute2 &&\
 apt install -y python3-pip python3-venv pipx python3-flask
 ```
  
