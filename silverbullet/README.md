@@ -1,5 +1,7 @@
-### install jupyter and notebook via pip3  in venv
+### install common packages inkl pip3, venv then install jupyter and notebook via pip3  in venv
+### attach bin bash
 ```
+docker exec -i -t container_name /bin/bash
 ```
 
 ```
