@@ -1,3 +1,7 @@
+### install jupyter and notebook via pip3  in venv
+```
+```
+
 ```
 apt update && apt upgrade -y &&apt install -y nano git curl wget  xz-utils zstd screen unzip iproute2
 curl -fsSL https://deno.land/install.sh | sh
