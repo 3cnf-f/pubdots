@@ -1,3 +1,8 @@
+## zip only py in codeserver, avoid py in venv folders by depth 4
+```
+find /home/podamanis/code-server/c-s_base_mount/workspace/ -maxdepth 4 -name "*.py"  -exec  zip -r cs5.zip {} +
+```
+
 ## use du to ls files and directories w human readable sizes
 ```
 du -bsh dir/*
