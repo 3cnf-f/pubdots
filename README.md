@@ -1,3 +1,8 @@
+## zip avoiding .venv __pycache__ .ipynb_chckoints Trash-0 folders also avoiding *.zip files
+```bash
+find   ./tele-bullen/jupy/ ! -path "*.venv/*" ! -path "*Trash-0/*" ! -path "*__pycache__/*" ! -path "*.git/*" ! -path "*.ipynb_checkpoints/*" ! -type d ! -name "*.zip" -name "*.*"   -exec  zip -r jp25-02-24v2.zip {} +
+```
+
 ## zip only py in codeserver, avoid py in venv folders by depth 4
 ```
 find /home/podamanis/code-server/c-s_base_mount/workspace/ -maxdepth 4 -name "*.py"  -exec  zip -r cs5.zip {} +
