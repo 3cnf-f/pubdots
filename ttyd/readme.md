@@ -12,6 +12,22 @@ apt install -y nano git curl wget xz-utils zstd unzip iproute2 &&\
 apt install -y python3-pip python3-venv
 
 ```
+### install nvim
+```bash
+
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+```
+
+
+### Then add this to your shell config (~/.bashrc, ~/.zshrc, ...):
+```bash
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+```
+
+
 
 ## install ttyd
 ```bash
