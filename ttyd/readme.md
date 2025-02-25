@@ -13,3 +13,7 @@ apt install -y python3-pip python3-venv
 
 ```
 
+## install ttyd
+```bash
+apt install ttyd
+```
