@@ -26,8 +26,11 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 ```
+### clone lazyvim config
+```bash
 
-
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
 
 ## install ttyd
 ```bash
