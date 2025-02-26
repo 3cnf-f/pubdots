@@ -31,6 +31,11 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
+### install codeium
+
+in  nvim splaxh press x to go to xtras, select codium and restart
+
+
 
 ## install ttyd
 ```bash
