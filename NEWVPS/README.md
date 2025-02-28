@@ -1,3 +1,16 @@
+#install nvim for root
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz &&\
+rm -rf /opt/nvim &&\
+tar -C /opt -xzf nvim-linux-x86_64.tar.gz &&\
+echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> /root/.bashrc
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install
+
+```
+
+
+
+
 # IMPORTANT! to edit files in container from outside (wo messing up permissions?)
 ```
 podman unshare hx ./.local/share/containers/storage/overlay/0a........3d/diff/home/ubuntu/ons/app.py
@@ -14,7 +27,7 @@ cat .ssh/id_ed25519.pub | ssh -p23 utttt@uxxxxx.your-storagebox.de install-ssh-k
 apt update && \
 apt upgrade -y &&\
 apt install -y nano git curl wget xz-utils zstd unzip iproute2 &&\
-apt install -y python3-pip python3-venv pipx python3-flask
+apt install -y python3-pip python3-venv pipx python3-flask  
 ```
  
 
