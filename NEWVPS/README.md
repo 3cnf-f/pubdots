@@ -8,6 +8,18 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install
 
 ```
 
+# fzf nvim search patern and open in nvim put in bash_aliases
+```
+f_fz_nv() {
+  local search_term="$1"
+  local file=$(find .  -name "${search_term}"  | fzf --preview 'cat {}')
+  
+  if [[ -n "$file" ]]; then
+    nvim "$file"
+  fi
+}
+
+```
 
 
 
