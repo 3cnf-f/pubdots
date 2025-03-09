@@ -1,0 +1,35 @@
+[global]                                                                                                                                      
+    font = "Monospace 20" # Large font size                                                                                                   
+    geometry = "300x10-30-30" # Square-like box, bottom right (adjust size as needed)                                                         
+    monitor = 0                                                                                                                               
+    idle_threshold = 120                                                                                                                      
+    padding = 20 # Increased padding for larger box                                                                                           
+    horizontal_padding = 20                                                                                                                   
+    separator_height = 0 # No separator                                                                                                       
+    sort = true                                                                                                                               
+    transparency = 0 # No transparency for a solid box                                                                                        
+    indicate_hidden = yes                                                                                                                     
+    icon_position = left # Icon on the left                                                                                                   
+    sticky_history = yes                                                                                                                      
+    follow = mouse                                                                                                                            
+    ignore_dbusclose = false                                                                                                                  
+    layer = top                                                                                                                               
+                                                                                                                                              
+[frame]                                                                                                                                       
+    frame_width = 2 # Optional frame                                                                                                          
+    frame_color = "#999999" # Optional frame color                                                                                            
+                                                                                                                                              
+[urgency_low]                                                                                                                                 
+    background = "#444444"                                                                                                                    
+    foreground = "#cccccc"                                                                                                                    
+    timeout = 1                                                                                                                               
+                                                                                                                                              
+[urgency_normal]                                                                                                                              
+    background = "#555555"                                                                                                                    
+    foreground = "#eeeeee"                                                                                                                    
+    timeout = 3                                                                                                                               
+                                                                                                                                              
+[urgency_critical]                                                                                                                            
+    background = "#666666"                                                                                                                    
+    foreground = "#ffffff"
+    timeout = 0 
