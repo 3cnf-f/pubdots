@@ -5,9 +5,9 @@ ssh-keygen -t ed25519 -C "154888836+3cnf-f@users.noreply.github.com" -f ~/.ssh/g
 
 #setup git for clone and commit
 ```
-git config --global gpg.format ssh 
-git config --global user.signingkey ~/.ssh/git_ed25519.pub 
-git config --global commit.gpgsign true
+git config --global gpg.format ssh &&\
+git config --global user.signingkey ~/.ssh/git_ed25519.pub &&\
+git config --global commit.gpgsign true &&\
 
 
 ```
