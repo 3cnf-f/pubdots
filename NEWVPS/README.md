@@ -10,8 +10,14 @@ git config --global user.signingkey ~/.ssh/git_ed25519.pub &&\
 git config --global commit.gpgsign true &&\
 
 
+
 ```
 
+# make sure url origin is ssh and not http
+```
+git remote set-url origin git@github.com:3cnf-f/tmp_nvim.git
+
+```
 #setup git user email
 ```
 git config user.name --global "3cnf-f" && git config user.email --global "154888836+3cnf-f@users.noreply.github.com"
