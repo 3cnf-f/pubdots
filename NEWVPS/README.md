@@ -1,4 +1,27 @@
+#setup git ssh key
+```
+ssh-keygen -t ed25519 -C "154888836+3cnf-f@users.noreply.github.com" -f ~/.ssh/git_ed25519 
+```
+
+#setup git for clone and commit
+```
+git config --global gpg.format ssh 
+git config --global user.signingkey ~/.ssh/git_ed25519.pub 
+git config --global commit.gpgsign true
+
+
+```
+
+#setup git user email
+```
+git config user.name --global "3cnf-f" && git config user.email --global "154888836+3cnf-f@users.noreply.github.com"
+
+
+
+```
+
 #install nvim for root
+
 ```
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz &&\
 rm -rf /opt/nvim &&\
