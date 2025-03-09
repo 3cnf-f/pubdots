@@ -1,3 +1,10 @@
+##add to .ssh/config
+```
+Host github.com
+  IdentityFile ~/.ssh/git_ed25519
+
+```
+
 #setup git ssh key
 ```
 ssh-keygen -t ed25519 -C "154888836+3cnf-f@users.noreply.github.com" -f ~/.ssh/git_ed25519 
