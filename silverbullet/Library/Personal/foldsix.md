@@ -1,4 +1,5 @@
 ```space-script
+\```space-script
 silverbullet.registerCommand({name: "foldsix"}, async () => {
   const thistext = await editor.getText();
   const thistextarray = thistext.split("\n");
@@ -16,4 +17,5 @@ silverbullet.registerCommand({name: "foldsix"}, async () => {
   }
     
 });
+\```
 ```
