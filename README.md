@@ -17,3 +17,8 @@ find firefox usage
 ```
 ps -aux |grep firefox |grep -v grep|awk '{cpu+=$3; memp+=$4; memb+=$6} END {print "CPU: " cpu "%"; print "MEM: " memp "%"; print "MEM: " memb/1024 "MB"}'
 ```
+
+Show podman process with id
+```
+podman ps -a --format "{{.ID}} {{.Names}} {{.Status}}"
+```
