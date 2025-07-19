@@ -10,3 +10,10 @@ git remote set-url origin git@github.com:3cnf-f/das_base.git
 
  -- pull latest changes:
 git pull 
+
+
+find firefox usage
+
+```
+ps -aux |grep firefox |grep -v grep|awk '{cpu+=$3; memp+=$4; memb+=$6} END {print "CPU: " cpu "%"; print "MEM: " memp "%"; print "MEM: " memb/1024 "MB"}'
+```
